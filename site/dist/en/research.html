@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | Yuchang Gil</title>
+<meta name="description" content="Selected SCI papers and research projects of Yuchang Gil.">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" hreflang="ko" href="../research.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yuchang Gil Research Portfolio">
+<meta property="og:title" content="Research | Yuchang Gil">
+<meta property="og:description" content="Selected SCI papers and research projects of Yuchang Gil.">
+<meta property="og:url" content="https://yuchang-gil.vercel.app/en/research.html">
+<meta property="og:image" content="https://yuchang-gil.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Yuchang Gil research portfolio card with a high-speed flame visualization">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><div class="who"><b>Yuchang Gil</b><span>길유창</span></div></a>
+  <nav aria-label="Site menu"><a href="index.html">Home</a><a href="research.html" aria-current="page">Research</a><a href="publications.html">Publications &amp; Awards</a></nav>
+  <a class="lang" href="../research.html" hreflang="ko" lang="ko" title="한국어 페이지">한국어</a>
+</div></header>
+
+<main class="wrap">
+
+  <div class="page-head">
+    <h1 class="serif">Research</h1>
+    <p>Detonation propulsion experiments, supercritical regenerative cooling CFD, and genetic-algorithm surrogate fuel optimization</p>
+  </div>
+
+  <section class="block" id="papers3">
+    <h2 class="serif">Selected Journal Articles</h2>
+
+    <article class="paper" id="fire">
+      <div class="figs">
+        <figure>
+          <img src="../fig/fire-fig1-setup.jpg" alt="Schematic of the pre-detonator setup: supply lines, pre-mixing room, spark plug, DDT device, pressure transducers, chamber modules">
+          <figcaption>Pre-detonator experimental setup (<i>Fire</i> 2025, Fig. 1)</figcaption>
+        </figure>
+        <figure>
+          <img src="../fire_br_layouts.png" alt="Three obstacle layouts with the same mean blockage ratio of 0.5: converging 0.3 to 0.7, constant 0.5, diverging 0.7 to 0.3">
+          <figcaption>Three obstacle layouts sharing a mean blockage ratio of 0.5 (adapted from <i>Fire</i> 2025, Fig. 2 and Table 1)</figcaption>
+        </figure>
+      </div>
+      <div>
+        <div class="when"><i>Fire</i> 8(7), 263 (2025) · First Author · Cover Article (Vol. 8 Issue 7)</div>
+        <h3>Impact of a Variable Blockage Ratio on the Detonation Transition in a Pre-Detonator</h3>
+        <p>This study experimentally investigated whether the spatial distribution of obstacle blockage ratio affects flame acceleration and deflagration-to-detonation transition (DDT) in a rotating detonation engine (RDE) pre-detonator when the mean blockage ratio is held constant at 0.5. Converging (0.3&rarr;0.7), uniform (0.5), and diverging (0.7&rarr;0.3) obstacle configurations were tested across CH<sub>4</sub>/O<sub>2</sub> equivalence ratios from 0.64 to 1.6.</p>
+        <p>High-speed chemiluminescence, schlieren imaging, and dynamic pressure measurements showed that the converging layout initiated detonation earliest and most often, with the largest difference at an equivalence ratio of 1.6. The results show that the streamwise distribution of the blockage ratio, rather than its mean value, governs DDT onset. Subsequent work extended this rig across fuels (C<sub>2</sub>H<sub>2</sub>, CH<sub>4</sub>), oxidizers (O<sub>2</sub>, N<sub>2</sub>O), and channel heights (3–15&nbsp;mm).</p>
+        <div class="role-line"><b>Role (first author):</b> test-rig design and fabrication, experiments, high-speed optical and pressure data analysis, manuscript drafting, and figures</div>
+        <a class="doi" href="https://doi.org/10.3390/fire8070263">DOI: 10.3390/fire8070263 →</a>
+      </div>
+      <div class="figrow">
+        <figure>
+          <img src="../fig/fire-fig3-flame.jpg" alt="High-speed flame visualization sequence, diverging layout, equivalence ratio 1.04">
+          <figcaption>High-speed flame visualization in the diverging layout (&phi; = 1.04, <i>Fire</i> 2025, Fig. 3)</figcaption>
+        </figure>
+        <figure>
+          <img src="../fire_schlieren.gif" alt="Animation of nine exit schlieren frames from the converging DDT device, CH4/O2, equivalence ratio 1.60, 0–80 µs">
+          <figcaption>Combustor-exit schlieren sequence in the converging layout (CH<sub>4</sub>/O<sub>2</sub>, &phi; = 1.60, 0–80&nbsp;&micro;s at 100,000&nbsp;fps, 9 raw frames from <i>Fire</i> 2025, Fig. 7)</figcaption>
+        </figure>
+        <p class="src">Source: Gil et al., <i>Fire</i> 8(7), 263 (2025), <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+      </div>
+    </article>
+
+    <article class="paper" id="fuel">
+      <figure>
+        <img src="../fig/aerospace-fig2-ga.png" alt="Flowchart of the genetic-algorithm surrogate design: species selection, initial population, first and second objective functions, selection, recombination and mutation">
+        <figcaption>Multi-objective genetic-algorithm surrogate formulation workflow (from follow-up study in <i>Aerospace</i> 13(4), 307 (2026), Fig. 2, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)</figcaption>
+      </figure>
+      <div>
+        <div class="when"><i>Fuel</i> 408, 137590 (2026) · Co-First Author</div>
+        <h3>Development of Jet Surrogate Fuel Formulated by Genetic Algorithm</h3>
+        <p>To represent practical multi-component aviation fuels (POSF-10325, JP-8, and RP-3) in combustion and heat-transfer simulations, we developed a genetic-algorithm framework that simultaneously optimizes component selection and mole fractions. One representative species from each of four hydrocarbon classes (n-alkanes, iso-alkanes, cycloalkanes, and aromatics) was selected from a pool of 16 candidates.</p>
+        <p>Incorporating both the temperature-dependent distillation curve and key physicochemical properties into a multi-objective fitness function yielded a 4-component POSF-10325 surrogate matching molecular weight within 1&nbsp;%, derived cetane number (DCN) within &minus;0.4&nbsp;%, lower heating value (LHV) within 0.5&nbsp;%, threshold sooting index (TSI) within 0.8&nbsp;%, and H/C ratio within 1&nbsp;%. Chemical kinetic fidelity was validated against measured ignition delay times and plug-flow (PFR) and jet-stirred reactor (JSR) experiments.</p>
+        <div class="role-line"><b>Role (co-first author):</b> improving the surrogate-generation code, reactor and ignition-delay kinetic validation, data curation, and manuscript drafting</div>
+        <a class="doi" href="https://doi.org/10.1016/j.fuel.2025.137590">DOI: 10.1016/j.fuel.2025.137590 →</a>
+      </div>
+    </article>
+
+    <article class="paper" id="ate">
+      <figure>
+        <img src="../fig/aerospace-fig10-density.jpg" alt="Density contours and streamlines on channel cross-sections at four positions along the regenerative cooling channel">
+        <figcaption>Cross-sectional density distributions and buoyancy-driven secondary streamlines in a cooling channel (from follow-up study in <i>Aerospace</i> 13(4), 307 (2026), Fig. 10, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)</figcaption>
+      </figure>
+      <div>
+        <div class="when"><i>Applied Thermal Engineering</i> 295, 130652 (2026) · Co-First Author</div>
+        <h3>Distinct Roles of Critical Pressure and Temperature in Supercritical Heat Transfer of Binary Hydrocarbon Mixtures for Regenerative Cooling</h3>
+        <p>Using ANSYS Fluent simulations of n-decane-based binary hydrocarbon mixtures in a regenerative cooling channel, this study isolated the respective roles of mixture critical pressure and critical temperature during supercritical heat transfer.</p>
+        <p>We showed that the margin between operating pressure and critical pressure governs the severity of heat-transfer deterioration (HTD), whereas the pseudo-critical temperature determines the axial location where deterioration and subsequent heat-transfer enhancement initiate. Flow-field analysis showed that a buoyancy-induced stagnation zone near the wall was the main cause of the deterioration.</p>
+        <div class="role-line"><b>Role (co-first author):</b> supercritical CFD simulations, post-processing code development, flow and heat-transfer analysis, and manuscript writing</div>
+        <a class="doi" href="https://doi.org/10.1016/j.applthermaleng.2026.130652">DOI: 10.1016/j.applthermaleng.2026.130652 →</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="block" id="projects">
+    <h2 class="serif">Research Projects</h2>
+    <div class="grid">
+
+      <article class="card" id="r-ddt">
+        <span class="kw">Experiments · First Author</span>
+        <div class="when">2024 – Present</div>
+        <h3>Deflagration-to-Detonation Transition in a Pre-Detonator</h3>
+        <p>Designed, built, and operated a pre-detonator test rig, characterizing flame acceleration and detonation onset using high-speed chemiluminescence, schlieren imaging, and dynamic pressure transducers.</p>
+        <ul>
+          <li><b>SCI, First Author (<i>Fire</i> 2025, Cover Article):</b> Compared converging, uniform, and diverging obstacle layouts (mean blockage ratio 0.5, &phi; = 0.64–1.6), establishing the advantage of converging blockage profiles for rapid DDT</li>
+          <li><b>KCI, First Author (J. Korean Soc. Propulsion Eng. 2025):</b> Compared C<sub>2</sub>H<sub>2</sub> and CH<sub>4</sub> fuels with O<sub>2</sub> (&phi; = 0.6–1.6); CH<sub>4</sub> transition distance shortened with increasing equivalence ratio, while C<sub>2</sub>H<sub>2</sub> achieved fully developed detonation immediately downstream of the DDT section</li>
+          <li><b>KCI, Second Author (J. Korean Soc. Combustion 2026):</b> Classified early flame kernel development and pressure evolution in a CH<sub>4</sub>/air pre-detonator into three stages across equivalence ratios</li>
+          <li><b>International Talk (ECM 2025, Edinburgh):</b> Reported hydraulic-diameter effects on flame acceleration and detonation wave propagation</li>
+          <li><b>International Talk (36th National Conference on Combustion and Energy, Taiwan, Apr 2026):</b> Mapped combustion regimes (deflagration, flame acceleration, detonation) across channel heights of 3–15&nbsp;mm at &phi; = 1.0</li>
+          <li><b>Domestic Talks &amp; Award:</b> Oxidizer comparison (O<sub>2</sub> vs. N<sub>2</sub>O, KSPE Spring 2025), LRDE propagation and injector optimization (KSPE Fall 2025 &amp; Spring 2026), KOSCO Excellent Poster Award (Fall 2025)</li>
+        </ul>
+      </article>
+
+      <article class="card" id="r-fuel">
+        <span class="kw">Optimization · Co-First Author</span>
+        <div class="when">2025 – Mar 2026</div>
+        <h3>Genetic-Algorithm Surrogate Fuels for Aviation Kerosene</h3>
+        <p>Formulated 4-component surrogates for POSF-10325, JP-8, and RP-3 using a multi-objective genetic algorithm and coupled them with supercritical regenerative-cooling CFD.</p>
+        <ul>
+          <li><b>SCI, Co-First Author (<i>Fuel</i> 2026):</b> Simultaneous optimization of 4 species (from 16 candidates) and mole fractions; validated against measured ignition delay times and PFR/JSR reactor experiments</li>
+          <li><b>SCI, Second Author (<i>Aerospace</i> 2026):</b> Formulated RP-3 surrogates targeting supercritical density profiles and pseudo-critical temperature specifically for regenerative-cooling CFD</li>
+        </ul>
+      </article>
+
+      <article class="card" id="r-heat">
+        <span class="kw">CFD Simulation · Co-First Author</span>
+        <div class="when">Nov 2023 – May 2026</div>
+        <h3>Supercritical Heat Transfer in Regenerative Cooling Channels</h3>
+        <p>Simulated supercritical hydrocarbon heat transfer in cooling channels using ANSYS Fluent, focusing on property variations near the pseudo-critical point and buoyancy-induced secondary flows.</p>
+        <ul>
+          <li><b>SCI, Co-First Author (<i>Applied Thermal Engineering</i> 2026):</b> Isolated the effects of critical pressure (deterioration severity) and pseudo-critical temperature (onset location) in binary hydrocarbon mixtures</li>
+          <li><b>KCI, Second Author (J. Korean Soc. Aviation and Aeronautics 2026):</b> Evaluated top, bottom, and side wall heating for a JP-8 surrogate at 3&nbsp;MPa; identified asymmetric secondary vortices and localized stagnation under side-wall heating</li>
+          <li><b>Conference Presentations:</b> 1 first-author poster (KSPE Fall 2023) and 3 co-authored talks (KOSCO Fall 2025, KSPE Fall 2025 &amp; Spring 2026)</li>
+        </ul>
+      </article>
+
+      <article class="card" id="r-pde">
+        <span class="kw">Experiments · First Author</span>
+        <div class="when">May – Dec 2024</div>
+        <h3>Detonation Characteristics in Micro PDE and Micro PDC</h3>
+        <p>Investigated the effects of fuel type, hydraulic diameter, and DDT obstacle geometry in micro pulse detonation engines and combustors (Micro PDE/PDC).</p>
+        <ul>
+          <li>Compared H<sub>2</sub>, C<sub>2</sub>H<sub>2</sub>, and CH<sub>4</sub> fuels with O<sub>2</sub> in an orifice-type DDT configuration (Spring 2024)</li>
+          <li>Evaluated C<sub>2</sub>H<sub>2</sub>/O<sub>2</sub> detonation propagation in smooth-walled channels with heights of 3, 8, and 15&nbsp;mm (Fall 2024)</li>
+          <li><b>Three Conference Awards (2024):</b> KSPE Best Paper Presentation Award, KOSCO Excellent Poster Award, and KSAA Encouragement Award</li>
+        </ul>
+      </article>
+
+      <article class="card" id="r-rocket">
+        <span class="kw">Rocket Design &amp; Launch</span>
+        <div class="when">2021 – Nov 2024</div>
+        <h3>Small Hybrid Rocket and Polaris-1 Liquid Rocket</h3>
+        <p>Designed, built, and launched a spark-ignited hybrid rocket in the Korea Aerospace University rocket club (S.R.S.), and contributed to the 450&nbsp;N-class ethanol/H<sub>2</sub>O<sub>2</sub> liquid rocket Polaris-1.</p>
+        <ul>
+          <li><b>Hybrid Rocket (Sole-Author Talk, KSPE Spring 2022):</b> Designed and built a 444&nbsp;N HDPE/N<sub>2</sub>O vehicle (length 2.7&nbsp;m, mass 19.2&nbsp;kg) with spark ignition; conducted launch test and post-test failure analysis of launch-lug binding</li>
+          <li><b>Polaris-1 Liquid Rocket (KCI Co-Author, 2024):</b> 450&nbsp;N-class engine design and 3-DOF trajectory simulation (225&nbsp;m predicted apogee); KSPE Excellent Paper Presentation Award (Spring 2023, NURA session)</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>Yuchang Gil (길유창) · <a href="mailto:yuchang.gil@kau.kr">yuchang.gil@kau.kr</a> · <a href="https://scholar.google.com/citations?user=cKrJnEEAAAAJ">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Yuchang-Gil">ResearchGate</a> · <a href="https://www.linkedin.com/in/%EC%9C%A0%EC%B0%BD-%EA%B8%B8-39148b354/">LinkedIn</a> · <a href="https://github.com/yuchang-gil">GitHub</a></p>
+</div></footer>
+
+</body>
+</html>

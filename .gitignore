@@ -1,0 +1,7 @@
+# 인터넷에 올리는 것은 site/dist 와 이 설정 파일뿐이다
+/*
+!/.gitignore
+!/vercel.json
+!/site/
+/site/*
+!/site/dist/
